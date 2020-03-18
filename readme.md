@@ -100,6 +100,14 @@ The `--reload` flag will detect file changes and restart the server automaticall
     </li>
 </ol>
 
+<h3>### Testing</h3>
+To run the unit tests, execute:
+
+```bash
+python test_app.py
+```
+Note - make sure the 3 header variables are updated for each role JWT collected.
+
 <h2>API behavior and RBAC controls</h2>
 <h3>### Endpoints</h3>
 <ul>
@@ -146,21 +154,21 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
 
+    {
+    "movies": [
         {
-        "movies": [
-            {
-                "id": 1,
-                "release_date": "2019",
-                "title": "Avengers: Endgame"
-            },
-            {
-                "id": 2,
-                "release_date": "2020",
-                "name": "Black Widow"
-            }
-        ],
-        "success": true
+            "id": 1,
+            "release_date": "2019",
+            "title": "Avengers: Endgame"
+        },
+        {
+            "id": 2,
+            "release_date": "2020",
+            "name": "Black Widow"
         }
+    ],
+    "success": true
+    }
 </li>
 </ul>
 <h3>PATCH /actors/&lt;id&gt;</h3>
@@ -169,17 +177,17 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission patch:actor</li>
     <li>Request:
         
-        {
-            "name": "Updated Name",
-            "age": 50,
-            "gender": "Male"
-        }
+    {
+        "name": "Updated Name",
+        "age": 50,
+        "gender": "Male"
+    }
 </li>
     <li>Response:
 
-        {
-            "success": true
-        }
+    {
+        "success": true
+    }
 </li>
 </ul>
 <h3>PATCH /movies/&lt;id&gt;</h3>
@@ -188,16 +196,16 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission patch:movie</li>
     <li>Request: 
     
-        {
-            "title": "Updated Title",
-            "release_date": "2018"
-        }
+    {
+        "title": "Updated Title",
+        "release_date": "2018"
+    }
 </li>
     <li>Response:
-    
-        {
-            "success": true
-        }
+
+    {
+        "success": true
+    }
 </li>
 </ul>
 <h3>POST /actors</h3>
@@ -206,18 +214,18 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission post:actor</li>
     <li>Request: 
     
-        {
-            "name": "Robert Downey Jr.",
-            "age": 54,
-            "gender": "Male"
-        }
+    {
+        "name": "Robert Downey Jr.",
+        "age": 54,
+        "gender": "Male"
+    }
 </li>
     <li>Response:
     
-        {
-            "id": 3,
-            "success": true
-        }
+    {
+        "id": 3,
+        "success": true
+    }
 </li>
 </ul>
 <h3>POST /movies</h3>
@@ -226,17 +234,17 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission post:movie</li>
     <li>Request: 
 
-        {
-            "title": "The Hunt",
-            "release_date": "2020"
-        }
+    {
+        "title": "The Hunt",
+        "release_date": "2020"
+    }
 </li>
     <li>Response:
 
-        {
-            "id": 3,
-            "success": true
-        }
+    {
+        "id": 3,
+        "success": true
+    }
 </li>
 </ul>
 <h3>DELETE /actors/&lt;id&gt;</h3>
@@ -246,9 +254,9 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
 
-        {
-            "success": true
-        }
+    {
+        "success": true
+    }
 </li>
 </ul>
 <h3>DELETE /movies/&lt;id&gt;</h3>
@@ -258,8 +266,8 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
         
-        {
-            "success": true
-        }
+    {
+        "success": true
+    }
 </li>
 </ul>
