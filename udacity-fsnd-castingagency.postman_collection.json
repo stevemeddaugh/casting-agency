@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e2589ac9-625f-4740-a001-8c027cec4ff4",
+		"_postman_id": "4aef4ad3-1023-4e1c-a34a-aa100cb07155",
 		"name": "udacity-fsnd-castingagency",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -27,6 +27,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -58,6 +62,10 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -89,6 +97,10 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/1",
 							"host": [
@@ -121,6 +133,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/1",
 							"host": [
@@ -153,6 +169,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -184,6 +204,10 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -215,6 +239,10 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/1",
 							"host": [
@@ -247,6 +275,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/1",
 							"host": [
@@ -289,6 +321,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -320,6 +356,10 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -351,6 +391,10 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/1",
 							"host": [
@@ -383,6 +427,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/1",
 							"host": [
@@ -420,6 +468,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -451,6 +503,10 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -482,6 +538,10 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/1",
 							"host": [
@@ -514,6 +574,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/1",
 							"host": [
@@ -559,8 +623,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Casting Director",
@@ -589,6 +652,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -674,12 +741,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"age\": \"25\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n    \"age\": \"25\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/actors/{{id}}",
@@ -713,6 +775,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/{{id}}",
 							"host": [
@@ -750,6 +816,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -781,6 +851,10 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -824,12 +898,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"release_date\": \"2020\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"release_date\": \"2020\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/movies/{{id}}",
@@ -863,6 +932,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/{{id}}",
 							"host": [
@@ -908,8 +981,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Executive Producer",
@@ -938,6 +1010,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors",
 							"host": [
@@ -1023,12 +1099,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"age\": \"25\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n    \"age\": \"25\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/actors/{{id}}",
@@ -1062,6 +1133,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/actors/{{id}}",
 							"host": [
@@ -1099,6 +1174,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies",
 							"host": [
@@ -1141,12 +1220,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"The Hunt\",\n\t\"release_date\": \"2019\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"title\": \"The Hunt\",\n\t\"release_date\": \"2019\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/movies",
@@ -1191,12 +1265,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"release_date\": \"2020\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							"raw": "{\n\t\"release_date\": \"2020\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/movies/{{id}}",
@@ -1230,6 +1299,10 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "{{host}}/movies/{{id}}",
 							"host": [
@@ -1275,8 +1348,7 @@
 						]
 					}
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
 	],
 	"event": [
@@ -1303,13 +1375,13 @@
 	],
 	"variable": [
 		{
-			"id": "0fec007c-8236-48dc-827b-cdd39bfadc3d",
+			"id": "33cd7bd6-3662-486b-ba2a-fd17ddd4b6f4",
 			"key": "host",
-			"value": "localhost:5000",
+			"value": "https://stemed-final-casting-agency.herokuapp.com/",
 			"type": "string"
 		},
 		{
-			"id": "2c7e24a3-b9da-4358-84b1-130a4b8fa9bc",
+			"id": "f52edaaa-cf49-4765-93d0-8302f4fee6ab",
 			"key": "id",
 			"value": "1",
 			"type": "string"
