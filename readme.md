@@ -143,24 +143,24 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission get:movies</li>
     <li>Request: None</li>
     <li>Response:
+
+    {
+    "movies": [
         {
-        "movies": [
-            {
-                "age": 35,
-                "gender": "Female",
-                "id": 1,
-                "name": "Scarlett Johansson"
-            },
-            {
-                "age": 30,
-                "gender": "Male",
-                "id": 2,
-                "name": "Chris Evans"
-            }
-        ],
-        "success": true
+            "age": 35,
+            "gender": "Female",
+            "id": 1,
+            "name": "Scarlett Johansson"
+        },
+        {
+            "age": 30,
+            "gender": "Male",
+            "id": 2,
+            "name": "Chris Evans"
         }
-    </li>
+    ],
+    "success": true
+    }
 </ul>
 <h3>PATCH /actors/&lt;id&gt;</h3>
 <ul>
