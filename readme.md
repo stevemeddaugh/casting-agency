@@ -19,6 +19,7 @@ Follow instructions to install the latest version of python for your platform in
 
 <h3>### PIP Dependencies</h3>
 <p>
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -30,7 +31,7 @@ This will install all of the required packages for this project.
 From within the root directory, each time you open a new terminal session, run:
 
 ```bash
-export FLASK_APP=app.py;
+export FLASK_APP=app.py
 ```
 
 To run the server, execute:
@@ -73,14 +74,23 @@ The `--reload` flag will detect file changes and restart the server automaticall
             <li>Casting Assistant
                 - can get:actors and get: movies
             </li>
-            <li>Casting Director
-                - can perform all actions of Casting Assistant
-                - can post:actor and delete:actor
-                - can patch:actor and patch:movie
+            <li>Casting Director<br/>
+                - can perform all actions of Casting Assistant<br/>
+                - can post:actor and delete:actor<br/>
+                - can patch:actor and patch:movie<br/>
             </li>
-            <li>Executive Producer
-                - can perform all actions
+            <li>Executive Producer<br/>
+                - can perform all actions<br/>
             </li>
+        </ul>
+    </li>
+    <li>Test the endpoints with the latest version of [Postman](https://getpostman.com). 
+        <ul>
+            <li>Register 3 users - assign the Casting Assistant role to one, Casting Director role to another, and Executive Producer role to the other.
+            <li>Sign into each account and make note of the JWT.
+            <li>Import the postman collection `./udacity-fsnd-castingagency.postman_collection.json`
+            <li>Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).
+            <li>Run the collection.
         </ul>
     </li>
 </ol>
