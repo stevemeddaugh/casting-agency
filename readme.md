@@ -104,10 +104,177 @@ The `--reload` flag will detect file changes and restart the server automaticall
 <ul>
     <li>GET /actors</li>
     <li>GET /movies</li>
-    <li>PATCH /actors/<id></li>
-    <li>PATCH /movies/<id></li>
+    <li>PATCH /actors/&lt;id&gt;</li>
+    <li>PATCH /movies/&lt;id&gt;</li>
     <li>POST /actors</li>
     <li>POST /movies</li>
-    <li>DELETE /actors/<id></li>
-    <li>DELETE /movies/<id></li>
+    <li>DELETE /actors/&lt;id&gt;</li>
+    <li>DELETE /movies/&lt;id&gt;</li>
+</ul>
+
+<h3>GET /actors</h3>
+<ul>
+    <li>Returns a list of all actors</li>
+    <li>Requires auth permission get:actors</li>
+    <li>Request: None</li>
+    <li>Response:
+        {
+        "actors": [
+            {
+                "age": 35,
+                "gender": "Female",
+                "id": 1,
+                "name": "Scarlett Johansson"
+            },
+            {
+                "age": 30,
+                "gender": "Male",
+                "id": 2,
+                "name": "Chris Evans"
+            }
+        ],
+        "success": true
+        }
+    </li>
+</ul>
+<h3>GET /movies</h3>
+<ul>
+    <li>Returns a list of all movies</li>
+    <li>Requires auth permission get:movies</li>
+    <li>Request: None</li>
+    <li>Response:
+        {
+        "movies": [
+            {
+                "age": 35,
+                "gender": "Female",
+                "id": 1,
+                "name": "Scarlett Johansson"
+            },
+            {
+                "age": 30,
+                "gender": "Male",
+                "id": 2,
+                "name": "Chris Evans"
+            }
+        ],
+        "success": true
+        }
+    </li>
+</ul>
+<h3>PATCH /actors/&lt;id&gt;</h3>
+<ul>
+    <li>Updates a selected actor by id</li>
+    <li>Requires auth permission patch:actor</li>
+    <li>Request: 
+        {
+            "name": "Updated Name",
+            "age": "integer",
+            "gender": "Male or Female"
+        }
+    </li>
+    <li>Response:
+        {
+        "success": true
+        }
+    </li>
+</ul>
+<h3>PATCH /movies/&lt;id&gt;</h3>
+<ul>
+    <li>Updates a selected movie by id</li>
+    <li>Requires auth permission patch:movie</li>
+    <li>Request: 
+        {
+            "title": "Updated Title",
+            "release_year": "yyyy"
+        }
+    </li>
+    <li>Response:
+        {
+        "success": true
+        }
+    </li>
+</ul>
+<h3>POST /actors</h3>
+<ul>
+    <li>Adds a new actor</li>
+    <li>Requires auth permission post:actor</li>
+    <li>Request: 
+        {
+            "name": "Updated Name",
+            "age": "integer",
+            "gender": "Male or Female"
+        }
+    </li>
+    <li>Response:
+        {
+        "actors": [
+            {
+                "age": 35,
+                "gender": "Female",
+                "id": 1,
+                "name": "Scarlett Johansson"
+            },
+            {
+                "age": 30,
+                "gender": "Male",
+                "id": 2,
+                "name": "Chris Evans"
+            }
+        ],
+        "success": true
+        }
+    </li>
+</ul>
+<h3>POST /movies</h3>
+<ul>
+    <li>Adds a new movie</li>
+    <li>Requires auth permission post:movie</li>
+    <li>Request: 
+        {
+            "title": "Updated Title",
+            "release_year": "yyyy"
+        }
+    </li>
+    <li>Response:
+        {
+        "actors": [
+            {
+                "age": 35,
+                "gender": "Female",
+                "id": 1,
+                "name": "Scarlett Johansson"
+            },
+            {
+                "age": 30,
+                "gender": "Male",
+                "id": 2,
+                "name": "Chris Evans"
+            }
+        ],
+        "success": true
+        }
+    </li>
+</ul>
+<h3>DELETE /actors/&lt;id&gt;</h3>
+<ul>
+    <li>Deletes an actor by id</li>
+    <li>Requires auth permission delete:actor</li>
+    <li>Request: None</li>
+    <li>Response:
+        {
+        "success": true
+        }
+    </li>
+</ul>
+<h3>DELETE /movies/&lt;id&gt;</h3>
+<ul>
+    <li>Deletes a movie by id</li>
+    <li>Requires auth permission delete:movie</li>
+    <li>Request: None</li>
+    <li>Response:
+        {
+        "success": true
+        }
+    </li>
 </ul>
