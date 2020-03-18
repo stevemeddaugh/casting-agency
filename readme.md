@@ -95,6 +95,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
                 `./udacity-fsnd-castingagency.postman_collection.json`
             <li>Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).
             <li>Run the collection.
+            <li>Collection points to live application: https://stemed-final-casting-agency.herokuapp.com/
         </ul>
     </li>
 </ol>
@@ -128,7 +129,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
             "name": "Scarlett Johansson"
         },
         {
-            "age": 30,
+            "age": 38,
             "gender": "Male",
             "id": 2,
             "name": "Chris Evans"
@@ -147,16 +148,14 @@ The `--reload` flag will detect file changes and restart the server automaticall
     {
     "movies": [
         {
-            "age": 35,
-            "gender": "Female",
             "id": 1,
-            "name": "Scarlett Johansson"
+            "release_date": "2019",
+            "title": "Avengers: Endgame"
         },
         {
-            "age": 30,
-            "gender": "Male",
             "id": 2,
-            "name": "Chris Evans"
+            "release_date": "2020",
+            "name": "Black Widow"
         }
     ],
     "success": true
@@ -167,16 +166,16 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Updates a selected actor by id</li>
     <li>Requires auth permission patch:actor</li>
     <li>Request: 
-        {
-            "name": "Updated Name",
-            "age": "integer",
-            "gender": "Male or Female"
-        }
+    {
+        "name": "Updated Name",
+        "age": 50,
+        "gender": "Male"
+    }
     </li>
     <li>Response:
-        {
-        "success": true
-        }
+    {
+    "success": true
+    }
     </li>
 </ul>
 <h3>PATCH /movies/&lt;id&gt;</h3>
@@ -184,15 +183,15 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Updates a selected movie by id</li>
     <li>Requires auth permission patch:movie</li>
     <li>Request: 
-        {
-            "title": "Updated Title",
-            "release_year": "yyyy"
-        }
+    {
+        "title": "Updated Title",
+        "release_date": "2018"
+    }
     </li>
     <li>Response:
-        {
-        "success": true
-        }
+    {
+    "success": true
+    }
     </li>
 </ul>
 <h3>POST /actors</h3>
@@ -200,30 +199,17 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Adds a new actor</li>
     <li>Requires auth permission post:actor</li>
     <li>Request: 
-        {
-            "name": "Updated Name",
-            "age": "integer",
-            "gender": "Male or Female"
-        }
+    {
+        "name": "Robert Downey Jr.",
+        "age": 54,
+        "gender": "Male"
+    }
     </li>
     <li>Response:
-        {
-        "actors": [
-            {
-                "age": 35,
-                "gender": "Female",
-                "id": 1,
-                "name": "Scarlett Johansson"
-            },
-            {
-                "age": 30,
-                "gender": "Male",
-                "id": 2,
-                "name": "Chris Evans"
-            }
-        ],
-        "success": true
-        }
+    {
+    "id": 3,
+    "success": true
+    }
     </li>
 </ul>
 <h3>POST /movies</h3>
@@ -231,29 +217,16 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Adds a new movie</li>
     <li>Requires auth permission post:movie</li>
     <li>Request: 
-        {
-            "title": "Updated Title",
-            "release_year": "yyyy"
-        }
+    {
+        "title": "The Hunt",
+        "release_date": "2020"
+    }
     </li>
     <li>Response:
-        {
-        "actors": [
-            {
-                "age": 35,
-                "gender": "Female",
-                "id": 1,
-                "name": "Scarlett Johansson"
-            },
-            {
-                "age": 30,
-                "gender": "Male",
-                "id": 2,
-                "name": "Chris Evans"
-            }
-        ],
-        "success": true
-        }
+    {
+    "id": 3,
+    "success": true
+    }
     </li>
 </ul>
 <h3>DELETE /actors/&lt;id&gt;</h3>
@@ -262,9 +235,9 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission delete:actor</li>
     <li>Request: None</li>
     <li>Response:
-        {
-        "success": true
-        }
+    {
+    "success": true
+    }
     </li>
 </ul>
 <h3>DELETE /movies/&lt;id&gt;</h3>
@@ -273,8 +246,8 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission delete:movie</li>
     <li>Request: None</li>
     <li>Response:
-        {
-        "success": true
-        }
+    {
+    "success": true
+    }
     </li>
 </ul>
