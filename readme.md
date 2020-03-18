@@ -71,7 +71,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     </li>
     <li>Create new roles for:
         <ul>
-            <li>Casting Assistant
+            <li>Casting Assistant<br/>
                 - can get:actors and get: movies
             </li>
             <li>Casting Director<br/>
@@ -86,11 +86,28 @@ The `--reload` flag will detect file changes and restart the server automaticall
     </li>
     <li>Test the endpoints with the latest version of [Postman](https://getpostman.com). 
         <ul>
-            <li>Register 3 users - assign the Casting Assistant role to one, Casting Director role to another, and Executive Producer role to the other.
+            <li>Register 3 users
+             - Assign the Casting Assistant role to one<br/>
+             - Assign the Casting Director role to another<br/>
+             - Assign the Executive Producer role to the last
             <li>Sign into each account and make note of the JWT.
-            <li>Import the postman collection `./udacity-fsnd-castingagency.postman_collection.json`
+            <li>Import the postman collection 
+                `./udacity-fsnd-castingagency.postman_collection.json`
             <li>Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).
             <li>Run the collection.
         </ul>
     </li>
 </ol>
+
+<h2>API behavior and RBAC controls</h2>
+<h3>### Endpoints</h3>
+<ul>
+    <li>GET /actors</li>
+    <li>GET /movies</li>
+    <li>PATCH /actors/<id></li>
+    <li>PATCH /movies/<id></li>
+    <li>POST /actors</li>
+    <li>POST /movies</li>
+    <li>DELETE /actors/<id></li>
+    <li>DELETE /movies/<id></li>
+</ul>
