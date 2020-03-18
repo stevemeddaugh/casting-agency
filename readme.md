@@ -84,18 +84,20 @@ The `--reload` flag will detect file changes and restart the server automaticall
             </li>
         </ul>
     </li>
+    <li>Register 3 users
+        <ul>
+            <li>Assign the Casting Assistant role to one</li>
+            <li>Assign the Casting Director role to another</li>
+            <li>Assign the Executive Producer role to the last</li>
+        </ul>
+    </li>
+    <li>Sign into each account and make note of the JWT.</li>
     <li>Test the endpoints with the latest version of [Postman](https://getpostman.com). 
         <ul>
-            <li>Register 3 users
-             - Assign the Casting Assistant role to one<br/>
-             - Assign the Casting Director role to another<br/>
-             - Assign the Executive Producer role to the last
-            <li>Sign into each account and make note of the JWT.
-            <li>Import the postman collection 
-                `./udacity-fsnd-castingagency.postman_collection.json`
-            <li>Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).
-            <li>Run the collection.
-            <li>Collection points to live application: https://stemed-final-casting-agency.herokuapp.com/
+            <li>Import the postman collection "./udacity-fsnd-castingagency.postman_collection.json"</li>
+            <li>Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).</li>
+            <li>Run the collection.</li>
+            <li>The collection points to live application: https://stemed-final-casting-agency.herokuapp.com/</li>
         </ul>
     </li>
 </ol>
