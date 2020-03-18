@@ -120,23 +120,24 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
     
-    {
-    "actors": [
         {
-            "age": 35,
-            "gender": "Female",
-            "id": 1,
-            "name": "Scarlett Johansson"
-        },
-        {
-            "age": 38,
-            "gender": "Male",
-            "id": 2,
-            "name": "Chris Evans"
+        "actors": [
+            {
+                "age": 35,
+                "gender": "Female",
+                "id": 1,
+                "name": "Scarlett Johansson"
+            },
+            {
+                "age": 38,
+                "gender": "Male",
+                "id": 2,
+                "name": "Chris Evans"
+            }
+        ],
+        "success": true
         }
-    ],
-    "success": true
-    }
+</li>
 </ul>
 <h3>GET /movies</h3>
 <ul>
@@ -145,21 +146,22 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
 
-    {
-    "movies": [
         {
-            "id": 1,
-            "release_date": "2019",
-            "title": "Avengers: Endgame"
-        },
-        {
-            "id": 2,
-            "release_date": "2020",
-            "name": "Black Widow"
+        "movies": [
+            {
+                "id": 1,
+                "release_date": "2019",
+                "title": "Avengers: Endgame"
+            },
+            {
+                "id": 2,
+                "release_date": "2020",
+                "name": "Black Widow"
+            }
+        ],
+        "success": true
         }
-    ],
-    "success": true
-    }
+</li>
 </ul>
 <h3>PATCH /actors/&lt;id&gt;</h3>
 <ul>
@@ -174,61 +176,68 @@ The `--reload` flag will detect file changes and restart the server automaticall
         }
 </li>
     <li>Response:
+
         {
         "success": true
         }
-    </li>
+</li>
 </ul>
 <h3>PATCH /movies/&lt;id&gt;</h3>
 <ul>
     <li>Updates a selected movie by id</li>
     <li>Requires auth permission patch:movie</li>
     <li>Request: 
-    {
-        "title": "Updated Title",
-        "release_date": "2018"
-    }
-    </li>
+    
+        {
+            "title": "Updated Title",
+            "release_date": "2018"
+        }
+</li>
     <li>Response:
-    {
-    "success": true
-    }
-    </li>
+    
+        {
+        "success": true
+        }
+</li>
 </ul>
 <h3>POST /actors</h3>
 <ul>
     <li>Adds a new actor</li>
     <li>Requires auth permission post:actor</li>
     <li>Request: 
-    {
-        "name": "Robert Downey Jr.",
-        "age": 54,
-        "gender": "Male"
-    }
-    </li>
+    
+        {
+            "name": "Robert Downey Jr.",
+            "age": 54,
+            "gender": "Male"
+        }
+</li>
     <li>Response:
-    {
-    "id": 3,
-    "success": true
-    }
-    </li>
+    
+        {
+        "id": 3,
+        "success": true
+        }
+</li>
 </ul>
 <h3>POST /movies</h3>
 <ul>
     <li>Adds a new movie</li>
     <li>Requires auth permission post:movie</li>
     <li>Request: 
-    {
-        "title": "The Hunt",
-        "release_date": "2020"
-    }
-    </li>
+
+        {
+            "title": "The Hunt",
+            "release_date": "2020"
+        }
+</li>
     <li>Response:
-    {
-    "id": 3,
-    "success": true
-    }
-    </li>
+
+        {
+        "id": 3,
+        "success": true
+        }
+</li>
 </ul>
 <h3>DELETE /actors/&lt;id&gt;</h3>
 <ul>
@@ -236,10 +245,11 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission delete:actor</li>
     <li>Request: None</li>
     <li>Response:
-    {
-    "success": true
-    }
-    </li>
+
+        {
+        "success": true
+        }
+</li>
 </ul>
 <h3>DELETE /movies/&lt;id&gt;</h3>
 <ul>
@@ -247,8 +257,9 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission delete:movie</li>
     <li>Request: None</li>
     <li>Response:
-    {
-    "success": true
-    }
-    </li>
+        
+        {
+        "success": true
+        }
+</li>
 </ul>
