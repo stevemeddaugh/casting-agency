@@ -119,24 +119,24 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
     
-        ```{
-        "actors": [
-            {
-                "age": 35,
-                "gender": "Female",
-                "id": 1,
-                "name": "Scarlett Johansson"
-            },
-            {
-                "age": 30,
-                "gender": "Male",
-                "id": 2,
-                "name": "Chris Evans"
-            }
-        ],
-        "success": true
-        }```
-        
+    {
+    "actors": [
+        {
+            "age": 35,
+            "gender": "Female",
+            "id": 1,
+            "name": "Scarlett Johansson"
+        },
+        {
+            "age": 30,
+            "gender": "Male",
+            "id": 2,
+            "name": "Chris Evans"
+        }
+    ],
+    "success": true
+    }
+
     </li>
 </ul>
 <h3>GET /movies</h3>
