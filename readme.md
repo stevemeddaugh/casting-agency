@@ -120,23 +120,23 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Request: None</li>
     <li>Response:
     
+    {
+    "actors": [
         {
-        "actors": [
-            {
-                "age": 35,
-                "gender": "Female",
-                "id": 1,
-                "name": "Scarlett Johansson"
-            },
-            {
-                "age": 38,
-                "gender": "Male",
-                "id": 2,
-                "name": "Chris Evans"
-            }
-        ],
-        "success": true
+            "age": 35,
+            "gender": "Female",
+            "id": 1,
+            "name": "Scarlett Johansson"
+        },
+        {
+            "age": 38,
+            "gender": "Male",
+            "id": 2,
+            "name": "Chris Evans"
         }
+    ],
+    "success": true
+    }
 </li>
 </ul>
 <h3>GET /movies</h3>
@@ -178,7 +178,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
 
         {
-        "success": true
+            "success": true
         }
 </li>
 </ul>
@@ -196,7 +196,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
     
         {
-        "success": true
+            "success": true
         }
 </li>
 </ul>
@@ -215,8 +215,8 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
     
         {
-        "id": 3,
-        "success": true
+            "id": 3,
+            "success": true
         }
 </li>
 </ul>
@@ -234,8 +234,8 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
 
         {
-        "id": 3,
-        "success": true
+            "id": 3,
+            "success": true
         }
 </li>
 </ul>
@@ -247,7 +247,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
 
         {
-        "success": true
+            "success": true
         }
 </li>
 </ul>
@@ -259,7 +259,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Response:
         
         {
-        "success": true
+            "success": true
         }
 </li>
 </ul>
