@@ -166,16 +166,20 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Updates a selected actor by id</li>
     <li>Requires auth permission patch:actor</li>
     <li>Request:
-    ```{
-        "name": "Updated Name",
-        "age": 50,
-        "gender": "Male"
-    }```
+        <p>
+        {
+            "name": "Updated Name",
+            "age": 50,
+            "gender": "Male"
+        }
+        </p>
     </li>
     <li>Response:
-    {
-    "success": true
-    }
+        <p>
+        {
+        "success": true
+        }
+        </p>
     </li>
 </ul>
 <h3>PATCH /movies/&lt;id&gt;</h3>
