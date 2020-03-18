@@ -118,7 +118,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
     <li>Requires auth permission get:actors</li>
     <li>Request: None</li>
     <li>Response:
-        {
+        ```{
         "actors": [
             {
                 "age": 35,
@@ -134,7 +134,7 @@ The `--reload` flag will detect file changes and restart the server automaticall
             }
         ],
         "success": true
-        }
+        }```
     </li>
 </ul>
 <h3>GET /movies</h3>
