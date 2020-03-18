@@ -136,8 +136,6 @@ The `--reload` flag will detect file changes and restart the server automaticall
     ],
     "success": true
     }
-
-    </li>
 </ul>
 <h3>GET /movies</h3>
 <ul>
